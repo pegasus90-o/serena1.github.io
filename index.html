@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Serene Makeup | BeautyGlow 💄✨</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Serene<span>Makeup</span></h1>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#publicidad">Publicidad</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#tratamiento">Tratamiento de datos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO: dos columnas - texto izquierda, anuncio pequeño derecha -->
+    <section id="inicio" class="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <h2>Encuentra tu tono, realza tu belleza ✨</h2>
+                <p>En Serene-Makeup (BeautyGlow) tenemos productos cuidadosamente seleccionados para todo tipo de piel y ocasión.</p>
+                <a class="btn" href="#productos">Comprar ahora</a>
+            </div>
+            <aside class="ad ad-small" aria-label="Publicidad - banner">
+                <div class="ad-frame">
+                    <img src="Captura de pantalla 2025-10-24 211244.png" alt="Publicidad McDonald's">
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS: rejilla -->
+    <section id="productos" class="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="https://via.placeholder.com/320x240" alt="Base Luminous 30ml">
+                <h3>Base Luminous 30ml</h3>
+                <p class="desc">Cobertura media, acabado natural</p>
+                <span class="precio">$45.000 COP</span>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://via.placeholder.com/320x240" alt="Paleta Rosé">
+                <h3>Paleta Rosé - 12 tonos</h3>
+                <p class="desc">Tonos neutros y cálidos</p>
+                <span class="precio">$78.000 COP</span>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://via.placeholder.com/320x240" alt="Labial Matte">
+                <h3>Labial Matte</h3>
+                <p class="desc">Duración 12h</p>
+                <span class="precio">$25.000 COP</span>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://via.placeholder.com/320x240" alt="Set Glow">
+                <h3>Set Glow - 3 piezas</h3>
+                <p class="desc">Iluminador + Rubor + Brocha</p>
+                <span class="precio">$95.000 COP</span>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PUBLICIDAD INTERMEDIA: centrada y más alta (simula 300×250) -->
+    <div id="publicidad" class="mid-ad-wrap">
+        <div class="ad ad-mid" aria-label="Publicidad principal">
+            <div class="ad-frame">
+                <img src="WhatsApp Image 2025-10-24 at 9.26.13 PM.jpeg" alt="Publicidad Coca-Cola">
+            </div>
+            <p class="ad-note">Publicidad</p>
+        </div>
+    </div>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <p>📍 Cra 45 #103-22 Bogotá, Colombia</p>
+        <p>📞 312 456 7890</p>
+        <p>📧 contacto@serenemakeup.com</p>
+
+        <form class="form-contacto" onsubmit="event.preventDefault(); alert('Mensaje enviado (simulado).');">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea placeholder="Mensaje..." required></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- TRATAMIENTO DE DATOS: fondo blanco, texto oscuro para legibilidad -->
+    <section id="tratamiento" class="tratamiento">
+        <div class="tratamiento-card">
+            <h2>Tratamiento de datos · BEAUTYGLOW 💄✨</h2>
+            <p><strong>Fecha de Vigencia:</strong> 12/05/30</p>
+
+            <p><strong>BeautyGlow</strong> es una tienda dedicada a la venta de productos de maquillaje de alta calidad. Valoramos y respetamos la privacidad de nuestros clientes, hemos diseñado esta política para informarle sobre cómo recopilamos, usamos, almacenamos y protegemos sus datos personales.</p>
+
+            <h3>Responsable del Tratamiento de los Datos Personales:</h3>
+            <ul>
+                <li>BeautyGlow S.A.S.</li>
+                <li>Dirección: Cr 16a n17-21 Avenida 13</li>
+                <li>Teléfono: 316-017-4806</li>
+                <li>Correo electrónico: beautyglowcol@gmail.com</li>
+                <li>NIT: 901548500</li>
+            </ul>
+
+            <h3>¿Qué Datos Personales Recopilamos?</h3>
+            <ul>
+                <li>Datos identificativos: nombre, apellidos, género.</li>
+                <li>Datos de contacto: correo electrónico, número de teléfono.</li>
+                <li>Datos de facturación: dirección de envío y facturación.</li>
+                <li>Datos de pago: información de tarjeta o pagos digitales (solo para transacciones).</li>
+                <li>Preferencias de compra y productos.</li>
+                <li>Datos de navegación (cookies, direcciones IP, etc.).</li>
+            </ul>
+
+            <h3>¿Cómo Usamos Sus Datos Personales?</h3>
+            <ul>
+                <li>Procesamiento de compras y pagos.</li>
+                <li>Atención al cliente.</li>
+                <li>Marketing y promociones personalizadas (con consentimiento).</li>
+                <li>Mejorar nuestros productos y servicios.</li>
+                <li>Cumplimiento de obligaciones legales.</li>
+            </ul>
+
+            <h3>¿Cómo Protegemos Sus Datos Personales?</h3>
+            <p>Adoptamos medidas de seguridad adecuadas para proteger su información contra el acceso no autorizado, pérdida o alteración. Usamos tecnologías de encriptación, servidores seguros y protocolos de autenticación.</p>
+
+            <h3>¿Con Quién Compartimos Sus Datos?</h3>
+            <p>Solo con proveedores logísticos, entidades bancarias y autoridades cuando sea necesario. No vendemos ni alquilamos datos personales.</p>
+
+            <h3>Derechos del Titular de los Datos</h3>
+            <p>Usted puede acceder, rectificar, suprimir o revocar su consentimiento escribiendo a <strong>beautyglowcol@gmail.com</strong> o llamando al <strong>3160174806</strong>.</p>
+
+            <h3>Uso de Cookies</h3>
+            <p>Usamos cookies para mejorar su experiencia. Puede desactivarlas en su navegador, pero algunas funciones podrían no estar disponibles.</p>
+
+            <h3>Actualización de la Política</h3>
+            <p>Nos reservamos el derecho de actualizar esta política. Le notificaremos cualquier cambio por nuestros canales de comunicación.</p>
+
+            <p><strong>Al usar nuestros servicios, usted acepta esta política de tratamiento de datos personales.</strong></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 BeautyGlow - Serene Makeup</p>
+    </footer>
+</body>
+</html>
