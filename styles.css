@@ -1,0 +1,163 @@
+/* ===== Reset ligero y base ===== */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #1b0f12;
+  color: #e6e6e6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+/* ===== NAV ===== */
+header { background: rgba(0,0,0,0.35); position: sticky; top: 0; z-index: 40; }
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+}
+.logo { color: #fff; font-weight: 700; font-size: 1.3rem; }
+.logo span { color: #ff6193; }
+.menu { list-style: none; margin: 0; padding: 0; display: flex; gap: 18px; align-items: center; }
+.menu a { color: #e9d9df; text-decoration: none; font-weight: 500; font-size: 0.95rem; opacity: 0.95; }
+.menu a:hover { color: #fff; }
+
+/* ===== HERO: dos columnas (texto izquierda + ad pequeña derecha) ===== */
+.hero { padding: 48px 20px; }
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 24px;
+  align-items: center;
+  min-height: 220px;
+}
+.hero-text h2 { color: #fff; font-size: 2rem; margin-bottom: 12px; }
+.hero-text p { color: #cfc7ca; max-width: 620px; margin-bottom: 18px; }
+.btn {
+  display: inline-block;
+  background: #b82a59;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.ad-small .ad-frame {
+  width: 100%;
+  max-width: 360px;
+  height: 90px;
+  background: linear-gradient(180deg, #182022, #121214);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px dashed rgba(255,255,255,0.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+.ad-small .ad-frame img { width: auto; height: 100%; display: block; object-fit: cover; }
+
+/* ===== PRODUCTOS: rejilla ===== */
+.productos { max-width: 1200px; margin: 36px auto; padding: 0 20px 24px 20px; }
+.productos h2 { color: #ffd1de; margin-bottom: 18px; }
+.productos-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.producto {
+  background: rgba(0,0,0,0.45);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+  transition: transform .22s ease;
+}
+.producto:hover { transform: translateY(-6px); }
+.producto img { width: 100%; border-radius: 8px; display: block; margin-bottom: 12px; }
+.producto h3 { color: #fff; margin: 0 0 8px 0; font-size: 1.02rem; }
+.producto .desc { color: #d1c6ca; font-size: 0.9rem; margin: 0 0 6px 0; }
+.precio { color: #ff6b93; font-weight: 700; display: block; margin-bottom: 10px; }
+.producto button {
+  background: #b82a59;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.producto button:hover { opacity: 0.95; transform: translateY(-1px); }
+
+/* ===== PUBLICIDAD INTERMEDIA: centrada y más alta (757×1076) ===== */
+.mid-ad-wrap { margin: 36px auto; display: flex; justify-content: center; padding: 0 20px; }
+.ad-mid .ad-frame {
+  width: 757px;  /* Corregido a 757px */
+  height: 1076px; /* Corregido a 1076px */
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.6);
+  background: linear-gradient(180deg, #1a1e20, #0f1112);
+  border: 2px dashed rgba(255,255,255,0.04);
+}
+.ad-mid .ad-frame img { width: auto; height: 100%; display: block; object-fit: cover; }
+.ad-note { color: #c9bfc3; text-align: center; margin-top: 8px; font-size: 0.9rem; }
+
+/* ===== CONTACTO ===== */
+.contacto { max-width: 900px; margin: 36px auto; padding: 20px; background: rgba(0,0,0,0.45); border-radius: 12px; }
+.contacto h2 { color: #ffd1de; margin-bottom: 8px; }
+.form-contacto { display: flex; flex-direction: column; gap: 12px; margin-top: 12px; }
+.form-contacto input, .form-contacto textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.03);
+  color: #fff;
+}
+.form-contacto textarea { min-height: 100px; resize: vertical; }
+.form-contacto button {
+  width: fit-content;
+  background: #b82a59;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+/* ===== TRATAMIENTO: fondo blanco, texto oscuro ===== */
+.tratamiento { background: transparent; padding: 42px 20px; }
+.tratamiento-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  color: #1b1b1b;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.35);
+  line-height: 1.6;
+}
+.tratamiento-card h2 { color: #b82a59; margin-top: 0; }
+.tratamiento-card h3 { color: #b82a59; margin-bottom: 8px; margin-top: 16px; }
+.tratamiento-card ul { padding-left: 20px; color: #222; }
+
+/* ===== FOOTER ===== */
+footer { margin-top: 18px; padding: 14px; text-align: center; color: #f7f0f2; background: linear-gradient(180deg, #0d0b0c, #080607); }
+
+/* ===== RESPONSIVE: anuncios se apilan y mantienen proporciones ===== */
+@media (max-width: 1000px) {
+  .productos-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-inner { grid-template-columns: 1fr 300px; }
+}
+@media (max-width: 760px) {
+  .menu { display: none; }
+  .hero-inner { grid-template-columns: 1fr; gap: 18px; }
+  .ad-small .ad-frame { max-width: 100%; height: 90px; }
+  .productos-grid { grid-template-columns: 1fr; }
+  .ad-mid .ad-frame { width: 92%; height: auto; aspect-ratio: 757/1076; }  /* Aspect-ratio corregido para mantener proporciones */
+  .hero-text h2 { font-size: 1.6rem; }
+  .logo { font-size: 1.1rem; }
+}
